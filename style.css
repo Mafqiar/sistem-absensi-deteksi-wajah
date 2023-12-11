@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: skyblue; /* Warna biru langit pada navbar */
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  position: relative; /* Menambahkan posisi relatif pada container */
+}
+
+#video {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative; /* Menambahkan posisi relatif pada video */
+}
+
+canvas {
+  position: absolute;
+  top: 130px;
+  left: 500px;
+  pointer-events: none; /* Menonaktifkan interaksi mouse pada canvas */
+  z-index: 1; /* Menetapkan z-index agar canvas berada di atas video */
+}
+
+.student-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-left: 600px;
+  color: #333;
+
+}

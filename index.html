@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sistem Absensi Kelas | face-api.js</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <script src="node_modules/file-saver/dist/FileSaver.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>📝 Sistem Absensi Kelas Deteksi Wajah 📸</h1>
+  </div>
+  <div class="container">
+    <video id="video" width="600" height="450" autoplay></video>
+    <div class="student-info">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Mahasiswa</th>
+            <th>Waktu</th>
+            <th>Tanggal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button id="downloadBtn">Download CSV</button>
+  </div>
+</body>
+
+</html>
