@@ -38,5 +38,9 @@ canvas {
   font-size: 18px;
   margin-left: 600px;
   color: #333;
+}
 
+tbody{
+  height: 100px;
+  width: 100px;
 }

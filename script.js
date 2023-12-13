@@ -69,6 +69,7 @@ function getLabeledFaceDescriptions() {
 
 const studentData = {};
 
+
 video.addEventListener("play", async () => {
     const labeledFaceDescriptors = await getLabeledFaceDescriptions();
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors);
@@ -96,7 +97,9 @@ video.addEventListener("play", async () => {
                 label: result,
             });
             drawBox.draw(canvas);
-            const studentName = result.toString();
+            // const studentName = result.toString();
+            const studentName = result.label;
+
             
             if (!studentData[studentName]) {
                 // Jika tidak, tambahkan data baru
